@@ -8,55 +8,103 @@
   const people = [
 	  {
 		  name: `Jatupat 'Pai Dao Din' Boonpatraksa`,
-		  detainedDate: new Date(2021, 2, 8)
+		  detainedDate: new Date(2021, 2, 8),
+		  releasedDate: new Date(2021, 3, 23),
+		  isBailed: true,
 	  },
 	  {
 		  name: `Parit 'Penguin' Chiwarak`,
-		  detainedDate: new Date(2021, 1, 9)
+		  detainedDate: new Date(2021, 1, 9),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
 	  {
 		  name: `Panupong 'Mike' Jadnok`,
-		  detainedDate: new Date(2021, 2, 8)
+		  detainedDate: new Date(2021, 2, 8),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
 	  {
 		  name: `Somyot Pruksakasemsuk`,
-		  detainedDate: new Date(2021, 1, 9)
+		  detainedDate: new Date(2021, 1, 9),
+		  releasedDate: new Date(2021, 3, 23),
+		  isBailed: true,
 	  },
 	  {
 		  name: `Arnon Nampa`,
-		  detainedDate: new Date(2021, 1, 9)
+		  detainedDate: new Date(2021, 1, 9),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
 	  {
 		  name: `Patiwat Saraiyaem, 'Mor Lam Bank'`,
-		  detainedDate: new Date(2021, 1, 9)
+		  detainedDate: new Date(2021, 1, 9),
+		  releasedDate: new Date(2021, 3, 9),
+		  isBailed: true,
 	  },
 	  {
 		  name: `Panusaya Sithijirawattanakul`,
-		  detainedDate: new Date(2021, 2, 8)
+		  detainedDate: new Date(2021, 2, 8),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
 	  {
 		  name: `Anchan (family name withheld)`,
-		  detainedDate: new Date(2021, 0, 19)
+		  detainedDate: new Date(2021, 0, 19),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
 	  {
 		  name: `Chaiamorn 'Ammy' Kaewwiboonpan`,
-		  detainedDate: new Date(2021, 2, 4)
+		  detainedDate: new Date(2021, 2, 4),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
 	  {
 		  name: `Parinya Cheewin Kulpathom aka 'Port Faiyen'`,
-		  detainedDate: new Date(2021, 2, 6)
+		  detainedDate: new Date(2021, 2, 6),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
 	  {
 		  name: `Piyarat 'Toto' Jongthep`,
-		  detainedDate: new Date(2021, 2, 6)
+		  detainedDate: new Date(2021, 2, 6),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
 	  {
-		  name: `Prommes`,
-		  detainedDate: new Date(2021, 2, 17)
+		  name: `Promsorn Viradhammajari`,
+		  detainedDate: new Date(2021, 2, 17),
+		  releasedDate: todayDate,
+		  isBailed: false,
+	  },
+	  {
+		  name: `Chukait Saengwong aka 'Justin'`,
+		  detainedDate: new Date(2021, 2, 23),
+		  releasedDate: todayDate,
+		  isBailed: false,
+	  },
+	  {
+		  name: `Tawat Sukpraseat`,
+		  detainedDate: new Date(2021, 1, 24),
+		  releasedDate: todayDate,
+		  isBailed: false,
+	  },
+	  {
+		  name: `Sakchai Tangchitsadudi`,
+		  detainedDate: new Date(2021, 1, 24),
+		  releasedDate: todayDate,
+		  isBailed: false,
+	  },
+	  {
+		  name: `Chaluay Ekkasit`,
+		  detainedDate: new Date(2021, 1, 24),
+		  releasedDate: todayDate,
+		  isBailed: false,
 	  },
   ]
-  function getNumberOfDaysUnderDetained(detainedDate) {
-    return Math.floor((todayDate - detainedDate) / DAYS_IN_MS);
+  function getNumberOfDaysUnderDetained(detainedDate, releasedDate) {
+    return Math.floor((releasedDate - detainedDate) / DAYS_IN_MS);
   }
 </script>
 
@@ -67,10 +115,13 @@
 				{ individual.name }
 			</div>
 			<div class="individual__name">      
-				<span>{getNumberOfDaysUnderDetained(individual.detainedDate)} Days Held Under Trial</span>
+				<span>{getNumberOfDaysUnderDetained(individual.detainedDate, individual.releasedDate)} Days Held Under Trial</span>
 			</div>
 			<div class="individual__image">
 				<img src="./assets/{index + 1}.jpeg" alt="{individual.name}"/>
+				{#if individual.isBailed}
+					<div class="stamp is-bailed">Bailed</div>
+				{/if}	
 			</div>
   		</div>
 	{/each}	  
@@ -132,6 +183,7 @@
 	background-color: #98d6f7;
 	overflow: hidden;
     grid-area: image;
+	text-align: center;
   }
 
   img {
@@ -140,4 +192,23 @@
     width: 100%;
 	height: 100%;
   }
+
+  .stamp {
+	font-weight: 700;
+	text-transform: uppercase;
+	mix-blend-mode: multiply;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.is-bailed {
+	color: #C4C4C4;
+	border: 1rem double #C4C4C4;
+	transform: rotate(-5deg);
+	font-size: 6rem;
+	font-family: "Open sans", Helvetica, Arial, sans-serif;
+	border-radius: 0;
+	padding: 0.5rem;
+} 
 </style>
