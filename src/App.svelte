@@ -7,102 +7,103 @@
   const DAYS_IN_MS = HOURS * MINUTES * SECONDS * MILLISECONDS;
   const people = [
 	  {
-		  name: `Jatupat 'Pai Dao Din' Boonpatraksa`,
+		  name: `จตุภัทร์ บุญภัทรรักษา "ไผ่ดาวดิน"`,
 		  detainedDate: new Date(2021, 2, 8),
 		  releasedDate: new Date(2021, 3, 23),
 		  isBailed: true,
 	  },
 	  {
-		  name: `Parit 'Penguin' Chiwarak`,
+		  name: `พริษฐ์ ชิวารักษ์ "เพนกวิน"`,
 		  detainedDate: new Date(2021, 1, 9),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Panupong 'Mike' Jadnok`,
+		  name: `ภาณุพงศ์ จาดนอก "ไมค์"`,
 		  detainedDate: new Date(2021, 2, 8),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Somyot Pruksakasemsuk`,
+		  name: `สมยศ พฤกษาเกษมสุข`,
 		  detainedDate: new Date(2021, 1, 9),
 		  releasedDate: new Date(2021, 3, 23),
 		  isBailed: true,
 	  },
 	  {
-		  name: `Arnon Nampa`,
+		  name: `อานนท์ นำภา`,
 		  detainedDate: new Date(2021, 1, 9),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Patiwat Saraiyaem, 'Mor Lam Bank'`,
+		  name: `ปติวัฒน์ สาหร่ายแย้ม "หมอลำแบงค์"`,
 		  detainedDate: new Date(2021, 1, 9),
 		  releasedDate: new Date(2021, 3, 9),
 		  isBailed: true,
 	  },
 	  {
-		  name: `Panusaya Sithijirawattanakul`,
+		  name: `ปนัสยา สิทธิจิรวัฒนกุล "รุ้ง"`,
 		  detainedDate: new Date(2021, 2, 8),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Anchan (family name withheld)`,
+		  name: `อัญชัน (สงวนนามสกุล)`,
 		  detainedDate: new Date(2021, 0, 19),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Chaiamorn 'Ammy' Kaewwiboonpan`,
+		  name: `ไชยอมร แก้ววิบูลย์พันธุ์ "แอมมี่ เดอะ บอตทอมบลูส์"`,
 		  detainedDate: new Date(2021, 2, 4),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Parinya Cheewin Kulpathom aka 'Port Faiyen'`,
+		  name: `ปริญญา ชีวินกุลปฐม "พอร์ท วงไฟเย็น"`,
 		  detainedDate: new Date(2021, 2, 6),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Piyarat 'Toto' Jongthep`,
+		  name: `ปิยรัฐ จงเทพ “โตโต้”`,
 		  detainedDate: new Date(2021, 2, 6),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Promsorn Viradhammajari`,
+		  name: `พรหมศร วีระธรรมจารี "ฟ้า"`,
 		  detainedDate: new Date(2021, 2, 17),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Chukait Saengwong aka 'Justin'`,
+		  name: `ชูเกียรติ แสงวงค์ "จัสติน"`,
 		  detainedDate: new Date(2021, 2, 23),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Tawat Sukpraseat`,
+		  name: `ธวัช สุขประเสริฐ`,
 		  detainedDate: new Date(2021, 1, 24),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Sakchai Tangchitsadudi`,
+		  name: `ศักดิ์ชัย ตั้งจิตสดุดี`,
 		  detainedDate: new Date(2021, 1, 24),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
 	  {
-		  name: `Chaluay Ekkasit`,
+		  name: `ฉลวย เอกศักดิ์`,
 		  detainedDate: new Date(2021, 1, 24),
 		  releasedDate: todayDate,
 		  isBailed: false,
 	  },
   ]
+
   function getNumberOfDaysUnderDetained(detainedDate, releasedDate) {
     return Math.floor((releasedDate - detainedDate) / DAYS_IN_MS);
   }
@@ -115,7 +116,7 @@
 				{ individual.name }
 			</div>
 			<div class="individual__name">      
-				<span>{getNumberOfDaysUnderDetained(individual.detainedDate, individual.releasedDate)} Days Held Under Trial</span>
+				<span>{getNumberOfDaysUnderDetained(individual.detainedDate, individual.releasedDate)} วัน ถูกคุมขังโดยไม่ได้รับการประกันตัว</span>
 			</div>
 			<div class="individual__image">
 				<picture>
@@ -124,7 +125,7 @@
 					<img src="./assets/{index + 1}.jpg" loading=”lazy” alt="{individual.name}"/>
 				  </picture>
 				{#if individual.isBailed}
-					<div class="stamp is-bailed">Bailed</div>
+					<div class="stamp is-bailed">ประกันตัว</div>
 				{/if}	
 			</div>
   		</div>
