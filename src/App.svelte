@@ -118,7 +118,11 @@
 				<span>{getNumberOfDaysUnderDetained(individual.detainedDate, individual.releasedDate)} Days Held Under Trial</span>
 			</div>
 			<div class="individual__image">
-				<img src="./assets/{index + 1}.jpeg" alt="{individual.name}"/>
+				<picture>
+					<source srcset="./assets/{index + 1}.avif" type="image/avif">
+					<source srcset="./assets/{index + 1}.webp" type="image/webp">
+					<img src="./assets/{index + 1}.jpg" loading=”lazy” alt="{individual.name}"/>
+				  </picture>
 				{#if individual.isBailed}
 					<div class="stamp is-bailed">Bailed</div>
 				{/if}	
