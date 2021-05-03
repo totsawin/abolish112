@@ -8,109 +8,96 @@
   const people = [
 	  {
 		  name: `จตุภัทร์ บุญภัทรรักษา "ไผ่ดาวดิน"`,
+		  nickname: 'pai',
 		  detainedDate: new Date(2021, 2, 8),
 		  releasedDate: new Date(2021, 3, 23),
-		  isBailed: true,
 	  },
 	  {
 		  name: `พริษฐ์ ชิวารักษ์ "เพนกวิน"`,
+		  nickname: 'penguin',
 		  detainedDate: new Date(2021, 1, 9),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ภาณุพงศ์ จาดนอก "ไมค์"`,
+		  nickname: 'mike',
 		  detainedDate: new Date(2021, 2, 8),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `สมยศ พฤกษาเกษมสุข`,
+		  nickname: 'somyot',
 		  detainedDate: new Date(2021, 1, 9),
 		  releasedDate: new Date(2021, 3, 23),
-		  isBailed: true,
 	  },
 	  {
 		  name: `อานนท์ นำภา`,
+		  nickname: 'arnon',
 		  detainedDate: new Date(2021, 1, 9),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ปติวัฒน์ สาหร่ายแย้ม "หมอลำแบงค์"`,
+		  nickname: 'bank',
 		  detainedDate: new Date(2021, 1, 9),
 		  releasedDate: new Date(2021, 3, 9),
-		  isBailed: true,
 	  },
 	  {
 		  name: `ปนัสยา สิทธิจิรวัฒนกุล "รุ้ง"`,
+		  nickname: 'rung',
 		  detainedDate: new Date(2021, 2, 8),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `อัญชัน (สงวนนามสกุล)`,
+		  nickname: 'anchan',
 		  detainedDate: new Date(2021, 0, 19),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ไชยอมร แก้ววิบูลย์พันธุ์ "แอมมี่ เดอะ บอตทอมบลูส์"`,
+		  nickname: 'ammy',
 		  detainedDate: new Date(2021, 2, 4),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ปริญญา ชีวินกุลปฐม "พอร์ท วงไฟเย็น"`,
+		  nickname: 'port',
 		  detainedDate: new Date(2021, 2, 6),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ปิยรัฐ จงเทพ “โตโต้”`,
+		  nickname: 'toto',
 		  detainedDate: new Date(2021, 2, 6),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `พรหมศร วีระธรรมจารี "ฟ้า"`,
+		  nickname: 'fah',
 		  detainedDate: new Date(2021, 2, 17),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ชูเกียรติ แสงวงค์ "จัสติน"`,
+		  nickname: 'justin',
 		  detainedDate: new Date(2021, 2, 23),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ธวัช สุขประเสริฐ`,
+		  nickname: 'tawat',
 		  detainedDate: new Date(2021, 1, 24),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ศักดิ์ชัย ตั้งจิตสดุดี`,
+		  nickname: 'sakchai',
 		  detainedDate: new Date(2021, 1, 24),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
 	  {
 		  name: `ฉลวย เอกศักดิ์`,
+		  nickname: 'chaluay',
 		  detainedDate: new Date(2021, 1, 24),
-		  releasedDate: todayDate,
-		  isBailed: false,
 	  },
   ]
 
-  function getNumberOfDaysUnderDetained(detainedDate, releasedDate) {
+  function getNumberOfDaysUnderDetained(detainedDate, releasedDate = todayDate) {
     return Math.floor((releasedDate - detainedDate) / DAYS_IN_MS);
   }
 </script>
 
 <div class="people">
-	{#each people as individual, index}
+	{#each people as individual}
 		<div class="individual">
 			<div class="individual__title">
 				{ individual.name }
@@ -120,13 +107,13 @@
 			</div>
 			<div class="individual__image">
 				<picture>
-					<source srcset="./assets/{index + 1}.avif" type="image/avif">
-					<source srcset="./assets/{index + 1}.webp" type="image/webp">
-					<img src="./assets/{index + 1}.jpg" loading=”lazy” alt="{individual.name}"/>
+					<source srcset="./assets/{individual.nickname}.avif" type="image/avif">
+					<source srcset="./assets/{individual.nickname}.webp" type="image/webp">
+					<img src="./assets/{individual.nickname}.jpg" loading=”lazy” alt="{individual.name}"/>
 				  </picture>
-				{#if individual.isBailed}
+				{#if individual.releasedDate}
 					<div class="stamp is-bailed">ประกันตัว</div>
-				{/if}	
+				{/if}
 			</div>
   		</div>
 	{/each}	  
