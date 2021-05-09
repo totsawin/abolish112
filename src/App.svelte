@@ -88,6 +88,34 @@
 		  nickname: 'chaluay',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
 	  },
+	  {
+		  name: `ณัฐนนท์ ไชยมหาบุตร`,
+		  nickname: 'frank',
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+	  },
+	  {
+		  name: `สิรภพ พุ่มพึ่ง`,
+		  nickname: 'kanoon',
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 6 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 9 }),
+	  },
+	  {
+		  name: `หทัยรัตน์ แก้วสีคราม`,
+		  nickname: 'ploy',
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 2 }),
+	  },
+	  {
+		  name: `พรชัย`,
+		  nickname: 'pornchai',
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 11 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 22 }),
+	  },
+	  {
+		  name: `วรรณวลี ธรรมสัตยา`,
+		  nickname: 'tee',
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 27 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 7 }),
+	  },
   ]
 
   function getNumberOfDaysUnderDetained(detainedDate, releasedDate = todayDate) {
