@@ -1,98 +1,97 @@
 <script>
-  const todayDate = new Date();
-  const MILLISECONDS = 1000;
-  const SECONDS = 60;
-  const MINUTES = 60;
-  const HOURS = 24;
-  const DAYS_IN_MS = HOURS * MINUTES * SECONDS * MILLISECONDS;
+  import { Temporal } from 'proposal-temporal/lib/index.mjs';
+  const todayDate = Temporal.now.plainDateISO();
   const people = [
 	  {
 		  name: `จตุภัทร์ บุญภัทรรักษา "ไผ่ดาวดิน"`,
 		  nickname: 'pai',
-		  detainedDate: new Date(2021, 2, 8),
-		  releasedDate: new Date(2021, 3, 23),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 23 }),
 	  },
 	  {
 		  name: `พริษฐ์ ชิวารักษ์ "เพนกวิน"`,
 		  nickname: 'penguin',
-		  detainedDate: new Date(2021, 1, 9),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
 	  },
 	  {
 		  name: `ภาณุพงศ์ จาดนอก "ไมค์"`,
 		  nickname: 'mike',
-		  detainedDate: new Date(2021, 2, 8),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
 	  },
 	  {
 		  name: `สมยศ พฤกษาเกษมสุข`,
 		  nickname: 'somyot',
-		  detainedDate: new Date(2021, 1, 9),
-		  releasedDate: new Date(2021, 3, 23),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 23 }),
 	  },
 	  {
 		  name: `อานนท์ นำภา`,
 		  nickname: 'arnon',
-		  detainedDate: new Date(2021, 1, 9),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
 	  },
 	  {
 		  name: `ปติวัฒน์ สาหร่ายแย้ม "หมอลำแบงค์"`,
 		  nickname: 'bank',
-		  detainedDate: new Date(2021, 1, 9),
-		  releasedDate: new Date(2021, 3, 9),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 9 }),
 	  },
 	  {
 		  name: `ปนัสยา สิทธิจิรวัฒนกุล "รุ้ง"`,
 		  nickname: 'rung',
-		  detainedDate: new Date(2021, 2, 8),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 6 }),
 	  },
 	  {
 		  name: `อัญชัน (สงวนนามสกุล)`,
 		  nickname: 'anchan',
-		  detainedDate: new Date(2021, 0, 19),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 1, day: 19 }),
 	  },
 	  {
 		  name: `ไชยอมร แก้ววิบูลย์พันธุ์ "แอมมี่ เดอะ บอตทอมบลูส์"`,
 		  nickname: 'ammy',
-		  detainedDate: new Date(2021, 2, 4),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 4 }),
 	  },
 	  {
 		  name: `ปริญญา ชีวินกุลปฐม "พอร์ท วงไฟเย็น"`,
 		  nickname: 'port',
-		  detainedDate: new Date(2021, 2, 6),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 6 }),
 	  },
 	  {
 		  name: `ปิยรัฐ จงเทพ “โตโต้”`,
 		  nickname: 'toto',
-		  detainedDate: new Date(2021, 2, 6),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 6 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 5 }),
 	  },
 	  {
 		  name: `พรหมศร วีระธรรมจารี "ฟ้า"`,
 		  nickname: 'fah',
-		  detainedDate: new Date(2021, 2, 17),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 17 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 11 }),
 	  },
 	  {
 		  name: `ชูเกียรติ แสงวงค์ "จัสติน"`,
 		  nickname: 'justin',
-		  detainedDate: new Date(2021, 2, 23),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 23 }),
 	  },
 	  {
 		  name: `ธวัช สุขประเสริฐ`,
 		  nickname: 'tawat',
-		  detainedDate: new Date(2021, 1, 24),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
 	  },
 	  {
 		  name: `ศักดิ์ชัย ตั้งจิตสดุดี`,
 		  nickname: 'sakchai',
-		  detainedDate: new Date(2021, 1, 24),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
 	  },
 	  {
 		  name: `ฉลวย เอกศักดิ์`,
 		  nickname: 'chaluay',
-		  detainedDate: new Date(2021, 1, 24),
+		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
 	  },
   ]
 
   function getNumberOfDaysUnderDetained(detainedDate, releasedDate = todayDate) {
-    return Math.floor((releasedDate - detainedDate) / DAYS_IN_MS);
+	return detainedDate.until(releasedDate, { largestUnit: 'days' }).days;
   }
 </script>
 
