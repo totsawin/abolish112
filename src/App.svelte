@@ -66,7 +66,7 @@
 		  name: `พรหมศร วีระธรรมจารี "ฟ้า"`,
 		  nickname: 'fah',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 17 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 11 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 10 }),
 	  },
 	  {
 		  name: `ชูเกียรติ แสงวงค์ "จัสติน"`,
@@ -103,6 +103,7 @@
 		  name: `หทัยรัตน์ แก้วสีคราม`,
 		  nickname: 'ploy',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 2 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 10 }),
 	  },
 	  {
 		  name: `พรชัย`,
