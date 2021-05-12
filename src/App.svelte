@@ -57,6 +57,7 @@
 		  name: `ปริญญา ชีวินกุลปฐม "พอร์ท วงไฟเย็น"`,
 		  nickname: 'port',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 6 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 12 }),
 	  },
 	  {
 		  name: `ปิยรัฐ จงเทพ “โตโต้”`,
