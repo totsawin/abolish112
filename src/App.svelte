@@ -12,6 +12,7 @@
 		  name: `พริษฐ์ ชิวารักษ์ "เพนกวิน"`,
 		  nickname: 'penguin',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 11 }),
 	  },
 	  {
 		  name: `ภาณุพงศ์ จาดนอก "ไมค์"`,
@@ -50,6 +51,7 @@
 		  name: `ไชยอมร แก้ววิบูลย์พันธุ์ "แอมมี่ เดอะ บอตทอมบลูส์"`,
 		  nickname: 'ammy',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 4 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 11 }),
 	  },
 	  {
 		  name: `ปริญญา ชีวินกุลปฐม "พอร์ท วงไฟเย็น"`,
