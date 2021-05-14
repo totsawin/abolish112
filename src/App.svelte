@@ -85,11 +85,13 @@
 		  name: `ศักดิ์ชัย ตั้งจิตสดุดี`,
 		  nickname: 'sakchai',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 13 }),
 	  },
 	  {
 		  name: `ฉลวย เอกศักดิ์`,
 		  nickname: 'chaluay',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 13 }),
 	  },
 	  {
 		  name: `ณัฐนนท์ ไชยมหาบุตร`,
