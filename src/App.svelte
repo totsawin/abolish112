@@ -162,8 +162,8 @@
   .people {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 1rem;
+    column-gap: 10px;
+    row-gap: 20px;
   }
 
   .individual {
@@ -175,39 +175,32 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     display: grid;
     font-family: "helvetica", "arial", sans-serif;
-    grid-template-areas:
-      "title"
-      "name"
-      "image";
     grid-template-rows: 10% 5% auto;
   }
 
   .individual__title {
     align-items: center;
-    display: flex;
+    display: grid;
     font-size: 1.5em;
     font-weight: bold;
 	padding-left: 1rem;
 	border-bottom: 1px solid;
-    grid-area: title;
   }
 
   .individual__name {
 	/* background-color: #ddb0e1; */
     color: #f9f2e2;
     align-items: center;
-    display: flex;
+    display: grid;
     font-size: 1em;
 	padding-left: 1rem;
 	border-bottom: 1px solid;
-    grid-area: name;
   }
 
   .individual__image {
 	position: relative;
 	background-color: #98d6f7;
 	overflow: hidden;
-    grid-area: image;
 	text-align: center;
   }
 
