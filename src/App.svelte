@@ -80,6 +80,7 @@
 		  name: `ธวัช สุขประเสริฐ`,
 		  nickname: 'tawat',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 18 }),
 	  },
 	  {
 		  name: `ศักดิ์ชัย ตั้งจิตสดุดี`,
@@ -97,6 +98,7 @@
 		  name: `ณัฐนนท์ ไชยมหาบุตร`,
 		  nickname: 'frank',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 18 }),
 	  },
 	  {
 		  name: `สิรภพ พุ่มพึ่ง`,
