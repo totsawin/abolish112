@@ -18,6 +18,7 @@
 		  name: `ภาณุพงศ์ จาดนอก "ไมค์"`,
 		  nickname: 'mike',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 1 }),
 	  },
 	  {
 		  name: `สมยศ พฤกษาเกษมสุข`,
@@ -29,6 +30,7 @@
 		  name: `อานนท์ นำภา`,
 		  nickname: 'arnon',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 1 }),
 	  },
 	  {
 		  name: `ปติวัฒน์ สาหร่ายแย้ม "หมอลำแบงค์"`,
@@ -75,6 +77,7 @@
 		  name: `ชูเกียรติ แสงวงค์ "จัสติน"`,
 		  nickname: 'justin',
 		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 23 }),
+		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 2 }),
 	  },
 	  {
 		  name: `ธวัช สุขประเสริฐ`,
