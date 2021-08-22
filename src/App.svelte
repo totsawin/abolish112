@@ -5,132 +5,235 @@
 	  {
 		  name: `จตุภัทร์ บุญภัทรรักษา "ไผ่ดาวดิน"`,
 		  nickname: 'pai',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 23 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 23 }),
+			  },
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 8, day: 11 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `พริษฐ์ ชิวารักษ์ "เพนกวิน"`,
 		  nickname: 'penguin',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 11 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 11 }),
+			  },
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 8, day: 9 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ภาณุพงศ์ จาดนอก "ไมค์"`,
 		  nickname: 'mike',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 1 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 1 }),
+			  },
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 8, day: 9 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `สมยศ พฤกษาเกษมสุข`,
 		  nickname: 'somyot',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 23 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 23 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `อานนท์ นำภา`,
 		  nickname: 'arnon',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 1 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 1 }),
+			  },
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 8, day: 11 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ปติวัฒน์ สาหร่ายแย้ม "หมอลำแบงค์"`,
 		  nickname: 'bank',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 9 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 9 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 9 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ปนัสยา สิทธิจิรวัฒนกุล "รุ้ง"`,
 		  nickname: 'rung',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 6 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 8 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 6 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `อัญชัน (สงวนนามสกุล)`,
 		  nickname: 'anchan',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 1, day: 19 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 1, day: 19 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ไชยอมร แก้ววิบูลย์พันธุ์ "แอมมี่ เดอะ บอตทอมบลูส์"`,
 		  nickname: 'ammy',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 4 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 11 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 4 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 11 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ปริญญา ชีวินกุลปฐม "พอร์ท วงไฟเย็น"`,
 		  nickname: 'port',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 6 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 12 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 6 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 12 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ปิยรัฐ จงเทพ “โตโต้”`,
 		  nickname: 'toto',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 6 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 5 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 6 }),
+				releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 5 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `พรหมศร วีระธรรมจารี "ฟ้า"`,
 		  nickname: 'fah',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 17 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 10 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 17 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 10 }),
+			  },
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 8, day: 9 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ชูเกียรติ แสงวงค์ "จัสติน"`,
 		  nickname: 'justin',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 23 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 2 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 23 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 6, day: 2 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ธวัช สุขประเสริฐ`,
 		  nickname: 'tawat',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 18 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 18 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ศักดิ์ชัย ตั้งจิตสดุดี`,
 		  nickname: 'sakchai',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 13 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 13 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ฉลวย เอกศักดิ์`,
 		  nickname: 'chaluay',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 13 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+		 		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 13 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `ณัฐนนท์ ไชยมหาบุตร`,
 		  nickname: 'frank',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 18 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 2, day: 24 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 18 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `สิรภพ พุ่มพึ่ง`,
 		  nickname: 'kanoon',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 6 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 9 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 6 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 9 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `หทัยรัตน์ แก้วสีคราม`,
 		  nickname: 'ploy',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 2 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 10 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 2 }),
+		 		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 10 }),
+			  }
+		  ]
 	  },
 	  {
 		  name: `พรชัย`,
 		  nickname: 'pornchai',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 11 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 22 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 3, day: 11 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 22 }),
+			  }
+		  ]
+		  
 	  },
 	  {
 		  name: `วรรณวลี ธรรมสัตยา`,
 		  nickname: 'tee',
-		  detainedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 27 }),
-		  releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 7 }),
+		  detainedDuration: [
+			  {
+				detainedDate: Temporal.PlainDate.from({ year: 2021, month: 4, day: 27 }),
+		  		releasedDate: Temporal.PlainDate.from({ year: 2021, month: 5, day: 7 }),
+			  }
+		  ]
 	  },
   ]
 
-  function getNumberOfDaysUnderDetained(detainedDate, releasedDate = todayDate) {
-	return detainedDate.until(releasedDate, { largestUnit: 'days' }).days;
+  function getNumberOfDaysUnderDetained(detainedDuration) {
+	return detainedDuration.reduce((acc, {detainedDate, releasedDate = todayDate} ) =>
+		acc + detainedDate.until(releasedDate, { largestUnit: 'days' }).days, 
+		0
+	);
   }
 </script>
 
@@ -141,7 +244,7 @@
 				{ individual.name }
 			</div>
 			<div class="individual__name">      
-				<span>{getNumberOfDaysUnderDetained(individual.detainedDate, individual.releasedDate)} วัน ถูกคุมขังโดยไม่ได้รับการประกันตัว</span>
+				<span>{getNumberOfDaysUnderDetained(individual.detainedDuration)} วัน ถูกคุมขังโดยไม่ได้รับการประกันตัว</span>
 			</div>
 			<div class="individual__image">
 				<picture>
@@ -149,7 +252,7 @@
 					<source srcset="./assets/{individual.nickname}.webp" type="image/webp">
 					<img src="./assets/{individual.nickname}.jpg" loading=”lazy” alt="{individual.name}"/>
 				  </picture>
-				{#if individual.releasedDate}
+				{#if individual.detainedDuration[individual.detainedDuration.length - 1].releasedDate}
 					<div class="stamp is-bailed">ประกันตัว</div>
 				{/if}
 			</div>
